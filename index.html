@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headings and tags</title>
+    <style>
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <a href="Contact US.html">Contact US</a>
+    <h1>Example of Ordered list</h1>
+    <ul type="square">
+        <li>tea</li>
+        <li>coffee</li>
+        <li>capuccino</li>
+    </ul>
+    <h2>Example of unordered list</h2>
+    <ol type="a">
+        <li>tea</li>
+        <li>coffee</li>
+        <li>capuccino</li>
+    </ol>
+    <h3>Lion</h3>
+    <p>Lion is the king of the jungle.</p><br>
+    <h4>Example of Description list</h4>
+    <dl>
+        <dt>Car</dt>
+        <dd>Starting price  RS.2000000</dd>
+        <dt>Bike</dt>
+        <dd>Starting price RS.100000</dd>
+    </dl>
+    <br>
+    <h5>Badminton</h5>
+    <p>Badminton is my favourite sport.</p>
+    <h6>Html</h6>
+    <p>i am studying Html and Css. I will be developing a project in the future time with the help of the this html and css.</p>
+    <h2>Table of students</h2>
+    <table border="1" style="background-color: brown;">
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>address</th>
+            <th>phone</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sarfaraz</td>
+            <td>bagbazar</td>
+            <td>9874663652</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>sarfu</td>
+            <td>bagbaazar</td>
+            <td>9874645652</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sarfe</td>
+            <td>kathmandu</td>
+            <td>9874663452</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>dhiraj</td>
+            <td>kist</td>
+            <td>9834663652</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>moin</td>
+            <td>mhepi</td>
+            <td>9874553652</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>shaheer</td>
+            <td>nayabazar</td>
+            <td>9875263652</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>anoop</td>
+            <td>islington</td>
+            <td>9874663532</td>
+        </tr>
+    </table>
+    <h1>Courses</h1>
+    <table border="2">
+        <tr>
+            <th>F_id</th>
+            <th>F_name</th>
+            <th>F_course</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>hari</td>
+            <td rowspan="2">php</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>sita</td>
+            
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>gita</td>
+            <td>c-programming</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>rita</td>
+            <td>html,Css</td>
+        </tr>
+    </table>
+    <h2>Example of rowspan and colspan</h2>
+    <table border="5">
+        <tr>
+            <th rowspan="2">id</th>
+            <th rowspan="2">name</th>
+            <th colspan="3">subject</th>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>php</td>
+            <td>java</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>sita</td>
+            <td>17</td>
+            <td>20</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>gita</td>
+            <td>18</td>
+            <td>21</td>
+            <td>24</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>rita</td>
+            <td>19</td>
+            <td>22</td>
+            <td>25</td>
+        </tr>
+    </table>  
+    <fieldset>  
+         <legend>Personal details</legend>
+            <form>
+                <label>FirstName:</label>
+                <input type="text" > <br>
+                <label>LastName:</label>
+                <input type="text"><br>
+                <label>Phone:</label>
+                <input type="number"><br>
+                <label>Gender:</label>
+                <input type="radio" name="mygender" id="male"><label>Male</label>
+                <input type="radio" name="mygender" id="female"><label>Female</label>
+                <input type="radio" name="mygender" id="others"><label>Others</label><br>
+                <label>Email:</label>
+                <input type="email"><br>
+                <label>Password:</label>
+                <input type="password"><br><br>
+                <input type="button" value="submit">
+                
+            </form>
+     </fieldset>
+     <fieldset>  
+        <legend>Academic</legend>
+        <table border="2">
+           <tr>
+               <th>Collegename</th>
+               <th>Board</th>
+               <th>Stream</th>
+               <th>Passedyear</th>
+               <th>GPA</th>
+           </tr>
+           <tr>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+               <td><input type="text"></td>
+           </tr>
+        </table><br>
+        <label><strong>Interested to study:</strong></label><br><br>
+        <input type="checkbox" name="qualification" id="BIT"><label>BIT</label><br>
+        <input type="checkbox" name="qualification" id="BIM"><label>BIM</label><br>
+        <input type="checkbox" name="qualification" id="BCA"><label>BCA</label><br>
+        <input type="checkbox" name="qualification" id="BSCIT"><label>BSCSIT</label><br><br>
+        <label>Preferred college</label>
+        <select>
+            <option value="select option" selected>Select Option</option>
+            <option value="kist">Kist</option>
+            <option value="ncit">NCIT</option>
+            <option value="islington">islington</option>
+            <option value="herald">Herald</option>
+            <option value="kcc">KCC</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Parents Info</legend>
+        <label>Father name:</label>
+        <input type="text">
+        <label>Father phone no:</label>
+        <input type="number">
+        <label>Mothers name:</label>
+        <input type="text">
+        <label>Mothers phone no:</label>
+        <input type="number">
+        <label>Permanent address:</label>
+        <input type="text">
+        <label>Guardian contact</label>
+        <input type="text">
+
+    </fieldset>
+    
+        
+    
+</body>
+</html>

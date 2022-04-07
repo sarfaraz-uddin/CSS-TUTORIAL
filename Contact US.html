@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        fieldset{
+            width:50%;
+        }
+        form{
+            text-align: left;
+        }
+        forminput{
+            margin: 10px;
+        }
+        button{
+            margin-left: 40%;
+            width:20%;
+        }
+        #emailerror,#passworderror,#mobilerror{
+            color:aquamarine;
+             display:none;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <legend>Contact us</legend>
+        <form>
+            <label>Full name:</label>
+            <input type="text" placeholder="enter your name"><br><br>
+            
+            <label>Email:</label>
+            <input type="text" id="email" autocomplete="off" onkeyup="handleemail()" required><br>
+            <p id="emailerror">email is invalid</p>
+            <label>password:</label>
+            <input type="password" id="password" autocomplete="off" onkeyup="handlepassword()" required><br>
+            <p id="passworderror">password must contain at least one lowercase , uppercase number and special character</p>
+            <label>mobile:</label>
+            <input type="text" autocomplete="off" id="mobile" onkeyup="handlenumber()"><br>
+            <p id="mobileerror">invalid mobile number</p>
+            <button>submit</button>
+        </form>
+    
+</fieldset>
+<script>
+    let emailfield=document.getElementById("email");
+    let passwordfield=document.getElementById("password");
+    let mobilefield=document.getElementById("mobile");
+    function handleemail(){
+        let emailerrormsg=document.getElementById("emailerror");
+        let emailregex=/[a-zA-Z0-9!@#$%^$*_-]+\@[a-zA-Z]+\.[a-zA-Z]/g;
+        if(emailfield.value.match(emailregex)){
+            emailerrormsg.style.display="none";
+        }
+        else{
+            emailerrormsg.style.display="block";
+        }
+    }
+        function handlepassword(){
+            let passworderrormsg=document.getElementById("passworderror");
+            let passwordregex=/(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^$*])[a-zA-Z0-9!@#$%^$*]{10,10}/g;
+        
+        if(passwordfield.value.match(passwordregex)){
+            passworderrormsg.style.display="none";
+        }
+        else{
+            passworderrormsg.style.display="block";
+        }
+    }
+    function handlenumber(){
+        let mobileerrormsg=document.getElementById("mobileerror");
+        let mobileregex=/^98[0-9]*$/g;
+        if(mobilefield.value.match(mobileregex)&& mobilefield.value.length==10){
+            mobileerrormsg.style.display="none";
+        }
+        else{
+            mobileerrormsg.style.display="block";
+        }
+    }
+</script>
+</body>
+</html>
