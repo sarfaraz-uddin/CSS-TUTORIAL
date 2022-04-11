@@ -144,10 +144,11 @@ body{
     font-weight: bold;
     font-size: 35px;
     padding: 20px;
+    margin-top: 50px;
 }
 .form-content{
     margin: 12px 13px;
-    border: 2px double black;
+    /* border: 2px double black; */
     /* display: flex;
     justify-content: end;
     align-items: flex-end;
@@ -178,6 +179,34 @@ body{
     background-color: burlywood;
     color: black;
 }
-.img-card.form-content{
+.img-card{
+    margin-top: -450px;
+    float: right;  
+    margin-right: 30px;
+    
+}
+.products{
+    text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: bold;
+    font-size: 35px;
+}
+.products h3{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.about-us{
+    text-align: center;
+    font-family: 'Rubik Moonrocks', cursive;
+    font-weight: bold;
+    font-size: 35px;
+}
+div img{
+    float: right;
+    margin-right: 20px;
+    padding: 10px;
 }
