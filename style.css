@@ -205,8 +205,28 @@ body{
     font-weight: bold;
     font-size: 35px;
 }
-div img{
+.about-us h3{
+    margin: 15px 15px;
+}
+div .contact-image{
     float: right;
     margin-right: 20px;
     padding: 10px;
+}
+ .image {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid red;
+    border-width: 12px;
+    border */
+    /* height: 400px;
+    width: 400px; */
+    
+}
+.image .imagee{
+     height: 400px;
+    width: 400px; 
+    
 }
